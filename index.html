@@ -15,16 +15,16 @@
     </header>
     <main>
         <div class="container-text">
-            <textarea type="text" placeholder="Ingrese texto aqui" class="textarea-text"></textarea>
+            <textarea id="textUser" type="text" placeholder="Ingrese texto aqui" class="textarea-text"></textarea>
             <small><img src="./img/icon-exclamation.svg" alt="icon-exclamation">Sólo letras minúsculas y sin acentos</small>
             <div class="container-buttons">
-                <button class="btn encrypt">Encriptar</button>
-                <button class="btn decrypt">Desencriptar</button>
+                <button class="btn encrypt" onclick="encryptText()">Encriptar</button>
+                <button class="btn decrypt" onclick="decryptText()">Desencriptar</button>
             </div>
         </div>
-        <div class="container-result">
+        <div id="container-result" class="container-result">
             <img src="./img/ilustracion_espera.svg" alt="ilustracion_espera">
-            <p>Ningún texto fue encontrado</p>
+            <span class="container-result-span">Ningún texto fue encontrado</span>
             <small>Ingrese el texto que desees encriptar o desencriptar</small>
         </div>
     </main>
